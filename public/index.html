@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TO Do app</title>
+    <link rel="stylesheet" href="app.css" />
+    <script
+      src="https://kit.fontawesome.com/1425df3f40.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tsparticles/confetti@3.0.3/tsparticles.confetti.bundle.min.js"></script>
+    <script defer src="app.js"></script>
+  </head>
+  <body class="bg-background">
+    <div class="main-container text-white my-16 mx-auto max-w-[500px]">
+      <div
+        class="state-container flex justify-between items-center border-2 w-[500px] border-purple rounded-xl px-5 py-6 bg-secondaryBackground"
+      >
+        <div class="left-state-container">
+          <h1 class="text-[30px] font-bold">Todo App</h1>
+          <p class="font-semibold mb-5">Keep it up!</p>
+          <div class="progressBar bg-background w-[280px] h-[10px] rounded-xl">
+            <div
+              class="progress bg-teal w-0 h-[10px] rounded-[10px] transition-all duration-[0.3] ease-linear"
+            ></div>
+          </div>
+        </div>
+        <div
+          class="right-state-container bg-purple rounded-[50%] w-[100px] h-[100px] flex items-center justify-center"
+        >
+          <p class="text-[30px] font-bold numbers">0 / 0</p>
+        </div>
+      </div>
+
+      <form
+        action=""
+        class="input-field mt-14 flex justify-between items-center mb-10"
+      >
+        <input
+          class="bg-secondaryBackground w-[85%] p-3 rounded-xl border-2 border-purple outline-none task-input"
+          type="text"
+          placeholder="Write your task"
+        />
+
+        <button
+          type="submit"
+          class="w-12 h-12 bg-purple rounded-full flex items-center justify-center add-task-btn"
+        >
+          <i
+            class="fa-solid fa-plus text-[22px] font-extrabold cursor-pointer"
+          ></i>
+        </button>
+      </form>
+
+      <ul class="task-list list-none"></ul>
+    </div>
+  </body>
+</html>

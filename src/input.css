@@ -1,0 +1,8 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.completed p {
+  text-decoration: line-through;
+  color: #24feee;
+}
